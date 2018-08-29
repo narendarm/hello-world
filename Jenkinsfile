@@ -9,12 +9,18 @@ pipeline {
 '''
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sh '''echo "hello second"
 '''
           }
         }
+      }
+    }
+    stage('step2') {
+      steps {
+        sh '''echo "seq"
+'''
       }
     }
   }
